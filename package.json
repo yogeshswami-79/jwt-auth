@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dummy":"nodemon dummy",
-    "server2":"nodemon server2",
     "start":"nodemon server"
   },
   "keywords": [],

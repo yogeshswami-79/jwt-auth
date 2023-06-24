@@ -1,32 +1,51 @@
-GET http://localhost:3001/auth/getall
+GET http://localhost:3003/auth/getall
 
 ###
 
 
-POST http://localhost:3002/users/register
+POST http://localhost:3003/users/register
 Content-Type: application/json
 
 {
-    "name":"yogesh",
+    "username":"yogesh",
+    "email":"yogesh@example.com",
     "password":"password123"
 }
 
 ###
 
 
-POST http://localhost:3002/users/login
+POST http://localhost:3003/users/login
 Content-Type: application/json
 
 {
-    "name":"yogesh",
+    "username":"yogesh",
     "password":"password123"
 }
 
+
+###
+POST http://localhost:3003/token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4MjIzMzM5MywiZXhwIjoxNjgyMjMzNDIzfQ.4JHGXdToRd6EAtgEK-A1u0jxLlN1GtyXoiIxD-Nrzoo
+Content-Type: application/json
+
 ###
 
-GET http://localhost:3002/data
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoieW9nZXNoIiwiaWF0IjoxNjY0NDQyNDAxfQ.04wOOGhHvEvrgb8O5I4NVyD6jhWukgtyyOwkmvk6FXY
+GET http://localhost:3003/data
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4MjIzMzM5MywiZXhwIjoxNjgyMjMzNDIzfQ.4JHGXdToRd6EAtgEK-A1u0jxLlN1GtyXoiIxD-Nrzoo
 
 {
-    "name":"yogesh",
+    "name":"yogesh"
 }
+
+
+###
+DELETE  http://localhost:3003/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4MjIzMjExNn0.fgeeP1VHeUFF6A0F9Y2d1io0bwSxypsy9t6tGOahnJ0"
+}
+
+###
+GET https://newsapi.org/v2/everything?q=bitcoin&apiKey=7feed6ad114a41caba9bddb97a0710c3
