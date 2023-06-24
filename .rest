@@ -26,13 +26,13 @@ Content-Type: application/json
 
 ###
 POST http://localhost:3003/token
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4MjIzMzM5MywiZXhwIjoxNjgyMjMzNDIzfQ.4JHGXdToRd6EAtgEK-A1u0jxLlN1GtyXoiIxD-Nrzoo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4NzU5MjA2OH0.7qiOX0C9c0UR0sTVJJRTnWpjSYer_cAzuVya_1m1qtA
 Content-Type: application/json
 
 ###
 
 GET http://localhost:3003/data
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4MjIzMzM5MywiZXhwIjoxNjgyMjMzNDIzfQ.4JHGXdToRd6EAtgEK-A1u0jxLlN1GtyXoiIxD-Nrzoo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4NzU5MjE3MCwiZXhwIjoxNjg3NTkyMjAwfQ._8kRtPu2Gt2kTxX8H280NI4VxCw2w9a_NSQAApoPKXU
 
 {
     "name":"yogesh"
@@ -44,8 +44,8 @@ DELETE  http://localhost:3003/logout
 Content-Type: application/json
 
 {
-    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4MjIzMjExNn0.fgeeP1VHeUFF6A0F9Y2d1io0bwSxypsy9t6tGOahnJ0"
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvZ2VzaEBleGFtcGxlLmNvbSIsImlhdCI6MTY4NzU5MjA2OH0.7qiOX0C9c0UR0sTVJJRTnWpjSYer_cAzuVya_1m1qtA"
 }
 
 ###
-GET https://newsapi.org/v2/everything?q=bitcoin&apiKey=7feed6ad114a41caba9bddb97a0710c3
+# GET https://newsapi.org/v2/everything?q=bitcoin&apiKey=7feed6ad114a41caba9bddb97a0710c3

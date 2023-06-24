@@ -12,6 +12,7 @@ const logger = winston.createLogger({
 
 const loggerRoute = (req, res, next) => {
   const { method, url, params, query, body, ip } = req;
+  const {password, ...data} = body;
 
   const logData = {
     timestamp: new Date().toISOString(),
@@ -19,7 +20,7 @@ const loggerRoute = (req, res, next) => {
     url,
     params,
     query,
-    body,
+    body: data,
     ip,
   };
 
