@@ -11,6 +11,7 @@ const logger = winston.createLogger({
 });
 
 const loggerRoute = (req, res, next) => {
+  console.log('middle')
   const { method, url, params, query, body, ip } = req;
   const {password, ...data} = body;
 
